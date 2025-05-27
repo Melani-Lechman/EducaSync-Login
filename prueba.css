@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+body {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.container {
+  width: 800px;
+  height: 450px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.left {
+  width: 100%;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  background: #003b8a;
+  color: white;
+  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.form-wrapper {
+  width: 70%;
+  max-width: 300px;
+}
+
+.brand {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: girl;
+  color: white;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 50px;
+}
+
+.login-form label {
+  font-size: 16px;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #cce;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: -10px;
+}
+
+.login-form button {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #001b3d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #002d6b;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+  margin-right: 50%;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: girl;
+  font-style: normal;
+  font-weight: normal;
+  src: url(fuente/girl\ love.ttf);
+}
